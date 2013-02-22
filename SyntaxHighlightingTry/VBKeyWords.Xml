@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<Language>
+  <Name>VBSCRIPT</Name>
+  <FileExtension>"vb vbs"</FileExtension>
+  <Categories>
+	  <Keywords>
+    <Pattern></Pattern>
+		<Subject>
+			addhandler addressof andalso alias and ansi as assembly attribute 
+			auto begin boolean byref byte byval call case catch cbool cbyte cchar 
+			cdate cdec cdbl char cint class clng cobj compare const continue cshort 
+			csng cstr ctype currency date decimal declare default delegate dim do double 
+			each else elseif end enum erase error event exit explicit false finally for 
+			friend function get gettype global gosub goto handles if implement implements 
+			imports in inherits integer interface is let lib like load long loop 
+			lset me mid mod module mustinherit mustoverride mybase myclass namespace new next not 
+			nothing notinheritable notoverridable object on option optional or orelse 
+			overloads overridable overrides paramarray preserve private property 
+			protected public raiseevent readonly redim rem removehandler rset 
+			resume return select set shadows shared short single static step stop 
+			string structure sub synclock then throw to true try type typeof unload 
+			unicode until variant wend when while with withevents writeonly xor 
+		</Subject> 
+		<Font> 
+			<FontName>Consolas</FontName> 
+			<FontSize>10</FontSize> 
+		</Font>
+		<Color>
+			<ForeColor>#0000FF</ForeColor>	 
+			<BackColor>White</BackColor>	 
+		</Color>
+	   </Keywords>
+    <Word>
+      <Subject></Subject>
+      <Pattern>[a-zA-Z]</Pattern>
+      <Font>
+        <FontName>Consolas</FontName>
+        <FontSize>10</FontSize>
+      </Font>
+      <Color>
+        <ForeColor>#000000</ForeColor>
+        <BackColor>White</BackColor>
+      </Color>
+    </Word>
+	   <Operators>
+	     <Subject></Subject>
+       <Pattern>=</Pattern>
+	     <Font> 
+		    <FontName>Consolas</FontName>
+        <FontSize>10</FontSize>
+       </Font>
+       <Color>
+		    <ForeColor>#000000</ForeColor>	 
+		    <BackColor>White</BackColor>	 
+		   </Color>
+	   </Operators> 
+	   <Number>
+       <Subject></Subject>
+       <Pattern>[0-9]</Pattern>
+       <Font>
+         <FontName>Consolas</FontName>
+         <FontSize>10</FontSize>
+       </Font>
+		   <Color>
+			   <ForeColor>#FF0000</ForeColor>	 
+			   <BackColor>White</BackColor>	 
+		   </Color>
+     </Number> 
+    <Comment>
+       <Subject>"'"</Subject>
+       <Pattern></Pattern>
+	     <Font> 
+		    <FontName>Consolas</FontName> 
+		    <FontSize>10</FontSize>
+       </Font>
+       <Color>
+			  <ForeColor>#00FF00</ForeColor>	 
+			  <BackColor>White</BackColor>	 
+		   </Color>
+   </Comment>    
+    <Logical>
+      <Subject>"not and or xor eqv imp"</Subject>
+      <Pattern></Pattern>
+      <Font>
+        <FontName>Consolas</FontName>
+        <FontSize>10</FontSize>
+      </Font>
+        <Color>
+          <ForeColor>Blue</ForeColor>
+          <BackColor>White</BackColor>
+        </Color>
+    </Logical>
+    <Comparison>
+      <Subject>"="</Subject>
+      <Pattern></Pattern>
+      <Font>
+        <FontName>Consolas</FontName>
+        <FontSize>10</FontSize>
+      </Font>
+      <Color>
+        <ForeColor>#000000</ForeColor>
+        <BackColor>White</BackColor>
+      </Color>
+    </Comparison>
+  </Categories>
+</Language>
+

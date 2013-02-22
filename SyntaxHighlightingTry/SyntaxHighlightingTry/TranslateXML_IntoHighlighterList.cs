@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
 
 namespace SyntaxHighlightingTry
@@ -20,35 +19,26 @@ namespace SyntaxHighlightingTry
         
         public void TranslateXMLFile(string XMLFile)
         {
-            try
+            XDocument xDoc = XDocument.Load(XMLFile);
+            //Look for things under the "Lanuage Section".
+            XElement element = xDoc.Descendants("Language").First();
+
+            string elementName = string.Empty; 
+
+
+            foreach (XElement xElement in element.Elements())
             {
-                XDocument xDoc = XDocument.Parse(Properties.Resources.VBKeyWords);
+                elementName = xElement.Name.ToString(); 
 
-                //XDocument xDoc = XDocument.Load(Properties.Resources.VBKeyWords);
-                //Look for things under the "Lanuage Section".
-                XElement element = xDoc.Descendants("Language").First();
-
-                string elementName = string.Empty;
-
-
-                foreach (XElement xElement in element.Elements())
+               // MessageBox.Show(xElement.Name.ToString());
+                //First thing we are looking for is Categories 
+                if (elementName == "Categories")
                 {
-                    elementName = xElement.Name.ToString();
 
-                    // MessageBox.Show(xElement.Name.ToString());
-                    //First thing we are looking for is Categories 
-                    if (elementName == "Categories")
-                    {
-
-                        TraverseSubElements(xElement);
-                    }
-
-
+                    TraverseSubElements(xElement); 
                 }
-            }
-            catch (Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                
+               
             }
         }
 

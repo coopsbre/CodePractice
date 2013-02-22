@@ -71,27 +71,6 @@ namespace SyntaxHighlightingTry.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;Windows-1252&quot; ?&gt;
-        ///&lt;Language&gt;
-        ///  &lt;Name&gt;VBSCRIPT&lt;/Name&gt;
-        ///  &lt;FileExtension&gt;&quot;vb vbs&quot;&lt;/FileExtension&gt;
-        ///  &lt;Categories&gt;
-        ///	  &lt;Keywords&gt;
-        ///    &lt;Pattern&gt;&lt;/Pattern&gt;
-        ///		&lt;Subject&gt;
-        ///			addhandler addressof andalso alias and ansi as assembly attribute 
-        ///			auto begin boolean byref byte byval call case catch cbool cbyte cchar 
-        ///			cdate cdec cdbl char cint class clng cobj compare const continue cshort 
-        ///			csng cstr ctype currency date decimal declare default delegate dim do double 
-        ///			each el [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string VBKeyWords {
-            get {
-                return ResourceManager.GetString("VBKeyWords", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap VSObject_Properties {

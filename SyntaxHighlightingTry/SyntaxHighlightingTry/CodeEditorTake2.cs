@@ -27,10 +27,7 @@ namespace SyntaxHighlightingTry
          public void ConvertXMLFileInto()
          {
              TranslateXML_IntoHighlighterList translator = new TranslateXML_IntoHighlighterList();
-             string file = SyntaxHighlightingTry.Properties.Resources.VBKeyWords; 
-             //@"C:\Users\BrendonMelina\SkyDrive\C#\CodeEditor\SyntaxHighlighterTry\SyntaxHighlighterTry\VBKeyWords.Xml"
-
-             translator.TranslateXMLFile(file);
+             translator.TranslateXMLFile(@"F:\CAREER\C#\CodeEditor\SyntaxHighlighterTry\SyntaxHighlighterTry\VBKeyWords.xml");
              dRules = translator._LanguageRuleList; 
          }
 
